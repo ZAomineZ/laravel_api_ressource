@@ -14,13 +14,13 @@ final class VehicleCollection extends ResourceCollection
     /**
      * Transform the resource collection into an array.
      *
-     * @param  Request  $request
+     * @param Request $request
      * @return array|Arrayable|JsonSerializable
      */
     public function toArray($request): array|JsonSerializable|Arrayable
     {
         return [
-          'data' => VehicleResource::collection($this->collection)
+            'data' => VehicleResource::collection($this->collection)
         ];
     }
 }

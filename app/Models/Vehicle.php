@@ -9,5 +9,7 @@ class Vehicle extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['model', 'rating', 'company'];
+
     protected $table = "vehicle";
 }
